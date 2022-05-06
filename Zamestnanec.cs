@@ -22,7 +22,7 @@ namespace OOP07
         {
             odpracHodiny += hodiny;
         }
-        public double VypoctiMzdu()
+        public virtual double VypoctiMzdu()
         {
             double mzda = HodinovaMzda * odpracHodiny;
             return mzda;

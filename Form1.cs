@@ -19,7 +19,16 @@ namespace OOP07
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Zamestnanec zamestnanec = new Zamestnanec("Lakatoš", "Bodnar", 100);
+            zamestnanec.OdpracujHodiny(10);
+            MessageBox.Show( zamestnanec.Vypis());
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Vedouci vedouci = new Vedouci("Ivan", "Bodnar", 110,69);
+            vedouci.OdpracujHodiny(10);
+            MessageBox.Show(vedouci.Vypis());
         }
     }
 }
