@@ -18,5 +18,24 @@ namespace OOP07
             this.prijmeni = prijmeni;
             HodinovaMzda = hodinovaMzda;
         }
+        public void OdpracujHodiny(int hodiny)
+        {
+            odpracHodiny += hodiny;
+        }
+        public double VypoctiMzdu()
+        {
+            double mzda = HodinovaMzda * odpracHodiny;
+            return mzda;
+        }
+
+        public string Vypis()
+        {
+            string s = "\nJméno: " + jmeno +
+                "\nPříjmení: " + prijmeni +
+                "\nOdpracované hodiny: " + odpracHodiny +
+                "\nHodinová mzda: " + HodinovaMzda +
+                "\nMzda: " + VypoctiMzdu();
+            return s;
+        }
     }
 }
